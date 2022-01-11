@@ -28,8 +28,13 @@ wget https://julialang-s3.julialang.org/bin/linux/x64/1.7/julia-1.7.1-linux-x86_
 
 tar zxvf julia-1.7.1-linux-x86_64.tar.gz
 
+mkdir julia && cd julia
+
 export PATH="$PATH:/dli/task/julia/julia-1.7.1/bin"
 
+julia -e 'using Pkg; Pkg.add("IJulia")' 
+
+### REPL
 using Pkg
 
 Pkg.add("IJulia")
