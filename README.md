@@ -20,15 +20,15 @@ unlink /opt/conda/envs/rapids/bin/python
 
 ln -s /opt/conda/envs/py38-rapids-21.12/bin/python /opt/conda/envs/rapids/bin/python
 
-## Restart 
+## Restart for changes to take effect
+
+## Julia setup
 
 wget https://julialang-s3.julialang.org/bin/linux/x64/1.7/julia-1.7.1-linux-x86_64.tar.gz
 tar zxvf julia-1.7.1-linux-x86_64.tar.gz
 
 export PATH="$PATH:/dli/task/julia/julia-1.7.1/bin"
 
-
-julia -e 'using Pkg; Pkg.activate("rapids")'
 using Pkg
 Pkg.add("IJulia")
 
