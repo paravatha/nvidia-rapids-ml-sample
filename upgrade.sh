@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/sh
+
 su 
  
 apt-get update -y
