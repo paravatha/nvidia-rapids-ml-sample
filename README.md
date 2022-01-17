@@ -45,6 +45,8 @@ Pkg.instantiate()
 
 ## Misc
 
+curl http://169.254.169.254/latest/meta-data/instance-type
+
 do-release-upgrade &&  apt-get autoremove
 
 vi /etc/update-manager/release-upgrades
