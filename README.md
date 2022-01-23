@@ -3,8 +3,12 @@
 ## Check Unix version
 
 cat /etc/lsb-release
-
+lsb_release -a  
 uname -a
+
+## check ubuntu lts setup
+vi /etc/update-manager/release-upgrades
+
 
 ## upgrade python
 
@@ -49,6 +53,5 @@ curl http://169.254.169.254/latest/meta-data/instance-type
 
 do-release-upgrade &&  apt-get autoremove
 
-vi /etc/update-manager/release-upgrades
 
 
